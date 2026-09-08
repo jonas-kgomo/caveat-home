@@ -1,31 +1,39 @@
 {
-  "name": "caveat-publication",
+  "name": "caveat-home",
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
-    "start": "next start --hostname 127.0.0.1",
-    "typecheck": "tsc --noEmit",
-    "test": "node --test test/*.test.mjs"
-  },
-  "engines": {
-    "node": ">=20.9.0"
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hugeicons/core-free-icons": "^4.3.2",
-    "@hugeicons/react": "^1.1.10",
-    "gray-matter": "^4.0.3",
+    "@tiptap/core": "^3.31.3",
+    "@tiptap/html": "3.31.3",
+    "@tiptap/pm": "^3.31.3",
+    "@tiptap/starter-kit": "3.31.3",
+    "happy-dom": "20.14.0",
+    "lucide-react": "1.42.0",
     "next": "16.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "react-markdown": "^10.1.0"
+    "sanitize-html": "2.17.7",
+    "zod": "4.5.4"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "typescript": "^5.9.3"
+    "@types/node": "26.5.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@types/sanitize-html": "2.16.1",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonas-kgomo/caveat-home.git"
   }
 }
